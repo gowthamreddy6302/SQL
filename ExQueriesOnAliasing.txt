@@ -1,0 +1,26 @@
+1.write a query to display ename and salary as employeename, sal using aliasing
+
+ANS : SELECT employeename AS 'ename' FROM employee
+
+2. write a query to display job, manager as work , owner using aliasing
+
+ANS : SELECT job AS 'work',manager AS 'owner' FROM employee
+
+3. write a query to display the details of empname, job, salary, dept as 
+'HI <EMP-NAME> YOUR <JOB> YOUR ARE EARNING <SALARY> WORKING IN <DEPTID>'
+
+ANS : SELECT concat('HI ', empname, ' YOUR ', job ,' YOUR ARE EARNING ',
+salary ,' WORKING IN DEPT ' ,deptid ) AS "Details of employees" FROM employee
+
+4. WRITE  A QUERY TO DISPLAY COLUMN DETAILS AS A MESSAGE LIKE 
+'HI <EMP-NAME> YOUR ADDRESS IS <ADDRESS> YOUR MANAGER IS <MANAGER>'
+
+ANS : SELECT concat('HI ', empname, ' YOUR ADDRESS IS ', address ,' YOUR MANAGER IS ',
+manager) AS "Details of employees" FROM employee
+
+5. WRITE A QUERY TO DISPLAY COLUMN DETAILS AS A MESSAGE LIKE 
+'HI <EMP-NAME> YOUR ADDRESS IS <ADDRESS> YOUR MANAGER IS <MANAGER>'
+WHOSE SALARY GREATER THAN 58000.
+
+ANS :  SELECT concat('HI ', empname, ' YOUR ADDRESS IS ', address ,' YOUR MANAGER IS ',
+manager) AS "Details of employees" FROM employee WHERE salary > 58000

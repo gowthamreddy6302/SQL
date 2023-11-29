@@ -1,0 +1,13 @@
+1.write a query to get all the employee details  whose salary is > than 58000.
+
+Ans. 
+
+2.write a query to get all employee details whose job is accountant.
+3.write a query to get all employee details whose job is manager.
+4.write a query to get all employee details whose salary > 55000 and job is manager.
+5.write a query to get all employee details whose address is 789 Oak St.
+6.write a query to get all employee details whose manager is Emily Davis.
+7.write a query to get all employee details who dont have manager.
+8.write a query to get all employee details whose manager is Emily Davis and salary > 60000 and job is accountant.
+9.write a query to get all employee details whose deptid is 13.
+10.write a query to get all employee details whose deptid is 13 and salary > 56000 and job is developer.

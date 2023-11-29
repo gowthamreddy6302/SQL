@@ -1,0 +1,24 @@
+1.Write a query to display all the employee details whose name length > 6 and their name having A character and also
+should have manager.
+
+ANS : SELECT * FROM employee 
+WHERE LEN (empname) > 6 AND empname LIKE '%A%' AND job = 'manager'
+
+2.Write a query to display all the employee names in upper case wose salary > 50000 and job is 
+either analyst or tester or developer or manager
+
+ANS : SELECT UPPER (empname) FROM employee
+WHERE salary > 50000 AND job IN ('analyst','tester','developer','manager')
+
+3.Write a query to display all the employee names in lower case and also display length of their names, jobs whose
+deptid is 13, 15, 3, 7, 9, 10.
+
+ANS : SELECT  LOWER (empname) FROM employee
+SELECT LEN (empname)FROM employee
+WHERE deptid IN (13,15,3,7,9,10)
+
+4.Write a query to display all the employee annual salaries, names whose length of jobs > 7 and jobs start with A or D.
+
+ANS : SELECT * FROM employee
+SELECT (salary * 12 ) AS " ANNUAL SALARY " FROM employee
+WHERE LEN (job) > 7 AND job LIKE 'A%' OR job LIKE 'D%'
